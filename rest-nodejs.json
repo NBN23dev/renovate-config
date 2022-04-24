@@ -1,0 +1,26 @@
+{
+  "extends": ["config:base"],
+  "description": "Configuration for NodeJS Rest APIs",
+  "timezone": "Europe/Madrid",
+  "schedule": ["before 8am on Monday"],
+  "assigneesFromCodeOwners": true,
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchDepTypes": ["devDependencies"],
+      "automerge": true
+    },
+    {
+      "matchPackagePatterns": ["^eslint"],
+      "groupName": "Eslint packages"
+    },
+    {
+      "matchPackagePatterns": ["^@types"],
+      "groupName": "Types packages"
+    },
+    {
+      "packageNames": ["node"],
+      "allowedVersions": "<=16"
+    }
+  ]
+}
