@@ -21,6 +21,10 @@
     {
       "packageNames": ["node"],
       "allowedVersions": "<=16"
+    },
+    {
+      "packageNames": ["gcr.io/distroless/nodejs"],
+      "allowedVersions": "<=16"
     }
   ]
 }
