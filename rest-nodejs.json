@@ -23,7 +23,7 @@
       "allowedVersions": "<=16"
     },
     {
-      "packageNames": ["gcr.io/distroless/nodejs"],
+      "packageNames": ["europe-west1-docker.pkg.dev/distroless/nodejs"],
       "allowedVersions": "<=16"
     }
   ]
